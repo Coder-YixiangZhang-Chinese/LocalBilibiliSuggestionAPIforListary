@@ -1,9 +1,9 @@
 # Local-Custom-Search-Suggestion-API-for-Listary
 
+🌐 语言: [简体中文](README.md) | ~~[English](README.en-US.md)~~*英文版README翻译待招募...*
+
 一个轻量级的本地 HTTP 接口服务，模拟不同平台搜索建议的响应格式，适用于 [Listary](https://www.listary.com/) 。  
 支持脱机运行（使用预设数据时），接口稳定，开箱即用，让你的搜索体验更加智能与高效。
-
-🌐 语言: [简体中文](README.md) | [English](README.en-US.md)
 
 # 🎬使用体验
 
