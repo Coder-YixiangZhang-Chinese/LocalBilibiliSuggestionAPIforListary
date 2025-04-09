@@ -1,5 +1,8 @@
 # Local-Custom-Search-Suggestion-API-for-Listary
 
+一个轻量级的本地 HTTP 接口服务，模拟不同平台搜索建议的响应格式，适用于 [Listary](https://www.listary.com/) 。  
+支持脱机运行（使用预设数据时），接口稳定，开箱即用，让你的搜索体验更加智能与高效。
+
 🌐 语言: [简体中文](README.md) | [English](README.en-US.md)
 
 # 🎬使用体验
@@ -7,10 +10,6 @@
 https://github.com/user-attachments/assets/da45d90a-0645-4454-b918-505851d8372f
 
 *2025.04.10 03:57 P.S. 必须吐槽一下Github只能上传10M的视频，码率都压成一坨了（*
-
-
-一个轻量级的本地 HTTP 接口服务，模拟不同平台搜索建议的响应格式，适用于 [Listary](https://www.listary.com/) 。  
-支持脱机运行（使用预设数据时），接口稳定，开箱即用，让你的搜索体验更加智能与高效。
 
 ---
 
