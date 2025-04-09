@@ -100,7 +100,21 @@ http://localhost:60000/suggest/taobao?q=雌二醇
 
 ### ⚠️如果你自定义端口或重新打包服务端，请同步修改 Listary 的搜索建议监听地址。
 
-### ⚠️此外，程序内置端口检测机制以避免多实例冲突，如需修改监听端口，请同时修改源码中的监听端口号。
+### ⚠️此外，程序内置端口检测机制以避免多实例冲突，如需修改监听端口，请同时修改源码中多实例检测的端口号。
+```python
+...
+def is_port_in_use(port):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        return s.connect_ex(("127.0.0.1", port)) == 0
+if is_port_in_use(60000): #此处端口要需要一并修改
+    print("服务已经在运行。")
+    sys.exit(0)  # 如果端口已经被占用，则退出
+...
+...
+if __name__ == '__main__':
+    # 运行Flask服务
+    app.run(host='0.0.0.0', port=60000) #默认监听60000端口
+```
 
 图解（不同平台请自行根据上方信息进行配置）：
 
