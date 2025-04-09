@@ -73,6 +73,9 @@ http://localhost:60000/suggest/taobao?q=雌二醇
 
 
 ### 不同平台的搜索URL、本地监听地址
+
+⚠️部分平台的搜索URL/搜索联想api需要**提供cookie**、**检查headers**等等，因此**不能保证**源代码中提供的cookie、headers能够**长期有效**
+
 - 淘宝
   - 搜索URL：`https://s.taobao.com/search?q={query}`
   - 搜索提示：`http://127.0.0.1:60000/suggest/taobao?q={query}`
@@ -92,8 +95,6 @@ http://localhost:60000/suggest/taobao?q=雌二醇
 ### ⚠️如果你自定义端口或重新打包服务端，请同步修改 Listary 的搜索建议监听地址。
 
 ### ⚠️此外，程序内置端口检测机制以避免多实例冲突，如需修改监听端口，请同时修改源码中的监听端口号。
-
-⚠️部分平台的搜索URL/搜索联想api需要**提供cookie**、**检查headers**等等，因此**不能保证**源代码中提供的cookie、headers能够**长期有效**
 
 图解（不同平台请自行根据上方信息进行配置）：
 
